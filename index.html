@@ -68,14 +68,15 @@
     <style>
         /* Custom Utilities */
         .glass {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(26, 26, 35, 0.85);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
         
         .text-gradient {
             background: linear-gradient(to right, #5753D5, #AE52DE);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -97,24 +98,24 @@
 
         /* Feature Image Placeholder */
         .feature-image-placeholder {
-            background-color: #f3f4f6; /* gray-100 */
-            border: 2px dashed #d1d5db; /* gray-300 */
+            background-color: #2a2a35;
+            border: 2px dashed #3a3a45;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #9ca3af; /* gray-400 */
+            color: #6b6b7a;
             font-weight: 500;
             border-radius: 1rem;
         }
     </style>
 </head>
-<body class="bg-white text-neutral-800 font-sans selection:bg-brand-500 selection:text-white overflow-x-hidden">
+<body class="bg-neutral-900 text-neutral-100 font-sans selection:bg-brand-500 selection:text-white overflow-x-hidden">
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Logo -->
-            <a href="#" class="text-2xl font-display font-bold text-neutral-900 flex items-center gap-2">
+            <a href="#" class="text-2xl font-display font-bold text-neutral-100 flex items-center gap-2">
                 <!-- Icon mimicking a piano key or music note style -->
                 <img src="AppIcon.png" 
                      alt="HabitBe App Icon" 
@@ -124,22 +125,22 @@
             </a>
 
             <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-600">
-                <a href="#features" class="hover:text-brand-500 transition-colors">Features</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-300">
+                <a href="#features" class="hover:text-brand-400 transition-colors">Features</a>
                 <a href="https://apps.apple.com/de/app/habit-tracker-habitbe/id1527811684" target="_blank" class="bg-brand-500 text-white px-5 py-2 rounded-full font-bold hover:bg-brand-600 transition-all transform hover:scale-105 shadow-lg shadow-brand-500/20">
                     Download
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-2xl text-neutral-900" onclick="toggleMenu()">
+            <button class="md:hidden text-2xl text-neutral-100" onclick="toggleMenu()">
                 <i class="ph ph-list"></i>
             </button>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-b border-neutral-100 p-6 flex-col gap-4 shadow-xl">
-            <a href="#features" class="block text-lg py-2 hover:text-brand-500" onclick="toggleMenu()">Features</a>
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-neutral-800 border-b border-neutral-700 p-6 flex-col gap-4 shadow-xl">
+            <a href="#features" class="block text-lg py-2 text-neutral-200 hover:text-brand-400" onclick="toggleMenu()">Features</a>
             <a href="https://apps.apple.com/de/app/habit-tracker-habitbe/id1527811684" class="w-full bg-brand-500 text-white py-3 rounded-xl font-bold mt-2 text-center shadow-lg shadow-brand-500/20">
                 <i class="ph ph-download-simple font-bold"></i>
                 Download on the Appstore
@@ -151,43 +152,43 @@
     <header class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
         <!-- Background Glows -->
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-0 pointer-events-none">
-            <div class="absolute top-[-10%] right-[-20%] w-[50rem] h-[50rem] bg-brand-100/60 rounded-full blur-[100px] animate-float-delayed"></div>
-            <div class="absolute bottom-[-10%] left-[-20%] w-[40rem] h-[40rem] bg-purple-100/40 rounded-full blur-[100px] animate-float"></div>
+            <div class="absolute top-[-10%] right-[-20%] w-[50rem] h-[50rem] bg-brand-900/50 rounded-full blur-[100px] animate-float-delayed"></div>
+            <div class="absolute bottom-[-10%] left-[-20%] w-[40rem] h-[40rem] bg-purple-900/30 rounded-full blur-[100px] animate-float"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <!-- Text Content -->
             <div class="text-center lg:text-left reveal">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-100 text-xs font-semibold text-brand-600 mb-6 uppercase tracking-wider">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-900/40 border border-brand-800 text-xs font-semibold text-brand-400 mb-6 uppercase tracking-wider">
                     <span class="relative flex h-2 w-2">
                       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-500 opacity-75"></span>
                       <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
                     </span>
                     Now available for iPhone & iPad
                 </div>
-                <h1 class="text-5xl lg:text-7xl font-display font-bold text-neutral-900 leading-[1.1] mb-6">
+                <h1 class="text-5xl lg:text-7xl font-display font-bold text-neutral-100 leading-[1.1] mb-6">
                     Manage your daily Routine <br />
                     <span class="text-gradient">Instantly at your fingertips.</span>
                 </h1>
-                <p class="text-lg text-neutral-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                <p class="text-lg text-neutral-300 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                     HabitBe is a clean, privacy-focused habit tracker that helps you build better routines with ease. 
                     Track your daily habits, stay motivated with insights and widgets, 
                     and keep full control of your data—simple, effective, and distraction-free.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="https://apps.apple.com/de/app/habit-tracker-habitbe/id1527811684" target="_blank" class="px-8 py-4 bg-neutral-900 hover:bg-neutral-800 text-white rounded-2xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-3 group">
+                    <a href="https://apps.apple.com/de/app/habit-tracker-habitbe/id1527811684" target="_blank" class="px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white rounded-2xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-3 group">
                         <i class="ph ph-download-simple font-bold"></i>
                         <span>Download on the App Store</span>
                     </a>
                 </div>
                 
-                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-neutral-500">
-                    <a href="https://sebastianboldt.io" class="text-m font-display font-bold text-neutral-900 flex items-center gap-2">
-                        Developed by Sebastian Boldt 👨🏻‍💻 <span class="text-brand-500"> (Website) </span>
+                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-neutral-400">
+                    <a href="https://sebastianboldt.io" class="text-m font-display font-bold text-neutral-200 flex items-center gap-2">
+                        Developed by Sebastian Boldt 👨🏻‍💻 <span class="text-brand-400"> (Website) </span>
                     </a>
                 </div>
 
-                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-neutral-500">
+                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-neutral-400">
                     <div class="flex items-center gap-2">
                         <i class="ph ph-device-mobile-camera text-lg"></i> iPhone
                     </div>
@@ -207,39 +208,39 @@
     </header>
 
     <!-- Trusted By / Categories -->
-    <div class="border-y border-neutral-100 bg-neutral-50/50 py-10">
+    <div class="border-y border-neutral-800 bg-neutral-800/50 py-10">
     <div class="max-w-7xl mx-auto px-6 text-center">
-        <p class="text-sm font-semibold text-neutral-500 uppercase tracking-widest mb-8">
+        <p class="text-sm font-semibold text-neutral-400 uppercase tracking-widest mb-8">
             Built for building better habits
         </p>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="flex flex-col items-center gap-3 group">
-                <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                <div class="w-12 h-12 rounded-full bg-brand-900/40 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
                     <i class="ph ph-check-circle"></i>
                 </div>
-                <span class="text-neutral-700 font-medium">Daily Habits</span>
+                <span class="text-neutral-200 font-medium">Daily Habits</span>
             </div>
 
             <div class="flex flex-col items-center gap-3 group">
-                <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                <div class="w-12 h-12 rounded-full bg-brand-900/40 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
                     <i class="ph ph-chart-line-up"></i>
                 </div>
-                <span class="text-neutral-700 font-medium">Progress Tracking</span>
+                <span class="text-neutral-200 font-medium">Progress Tracking</span>
             </div>
 
             <div class="flex flex-col items-center gap-3 group">
-                <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                <div class="w-12 h-12 rounded-full bg-brand-900/40 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
                     <i class="ph ph-bell-simple"></i>
                 </div>
-                <span class="text-neutral-700 font-medium">Reminders</span>
+                <span class="text-neutral-200 font-medium">Reminders</span>
             </div>
 
             <div class="flex flex-col items-center gap-3 group">
-                <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                <div class="w-12 h-12 rounded-full bg-brand-900/40 flex items-center justify-center text-brand-400 text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
                     <i class="ph ph-shield-check"></i>
                 </div>
-                <span class="text-neutral-700 font-medium">Privacy-First</span>
+                <span class="text-neutral-200 font-medium">Privacy-First</span>
             </div>
         </div>
     </div>
@@ -250,22 +251,22 @@
 <section id="features" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-            <h2 class="text-3xl md:text-5xl font-display font-bold text-neutral-900 mb-4">Everything to Stay Consistent.</h2>
-            <p class="text-neutral-600 text-lg">HabitBe helps you track habits, spot progress, and stay on track—without the clutter.</p>
+            <h2 class="text-3xl md:text-5xl font-display font-bold text-neutral-100 mb-4">Everything to Stay Consistent.</h2>
+            <p class="text-neutral-300 text-lg">HabitBe helps you track habits, spot progress, and stay on track—without the clutter.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Feature 1: Habit Tracking -->
-            <div class="group relative bg-white border border-neutral-200 hover:border-brand-500/30 rounded-3xl p-6 transition-all hover:shadow-xl hover:shadow-brand-500/5 reveal delay-100 flex flex-col">
-                <div class="w-12 h-12 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6">
+            <div class="group relative bg-neutral-800 border border-neutral-700 hover:border-brand-500/30 rounded-3xl p-6 transition-all hover:shadow-xl hover:shadow-brand-500/5 reveal delay-100 flex flex-col">
+                <div class="w-12 h-12 bg-brand-900/40 rounded-2xl flex items-center justify-center text-brand-400 text-2xl mb-6">
                     <i class="ph ph-check-circle"></i>
                 </div>
-                <h3 class="text-xl font-bold text-neutral-900 mb-2">Track Your Habits</h3>
-                <div class="text-brand-600 font-bold text-sm mb-3">Simple daily check-ins</div>
-                <p class="text-neutral-600 text-sm leading-relaxed mb-6 flex-grow">
+                <h3 class="text-xl font-bold text-neutral-100 mb-2">Track Your Habits</h3>
+                <div class="text-brand-400 font-bold text-sm mb-3">Simple daily check-ins</div>
+                <p class="text-neutral-300 text-sm leading-relaxed mb-6 flex-grow">
                     Create habits in seconds and check them off daily. Keep everything clean, focused, and easy to maintain.
                 </p>
-                <div class="overflow-hidden rounded-xl shadow-lg border border-neutral-200 reveal delay-200">
+                <div class="overflow-hidden rounded-xl shadow-lg border border-neutral-700 reveal delay-200">
                     <img src="DailyCheckIns.png"
                          alt="Screenshot of habit tracking"
                          class="w-full h-full object-cover"
@@ -274,16 +275,16 @@
             </div>
 
             <!-- Feature 2: Insights / Stats -->
-            <div class="group relative bg-white border border-neutral-200 hover:border-brand-500/30 rounded-3xl p-6 transition-all hover:shadow-xl hover:shadow-brand-500/5 reveal delay-200 flex flex-col">
-                <div class="w-12 h-12 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6">
+            <div class="group relative bg-neutral-800 border border-neutral-700 hover:border-brand-500/30 rounded-3xl p-6 transition-all hover:shadow-xl hover:shadow-brand-500/5 reveal delay-200 flex flex-col">
+                <div class="w-12 h-12 bg-brand-900/40 rounded-2xl flex items-center justify-center text-brand-400 text-2xl mb-6">
                     <i class="ph ph-chart-line-up"></i>
                 </div>
-                <h3 class="text-xl font-bold text-neutral-900 mb-2">See Your Progress</h3>
-                <div class="text-brand-600 font-bold text-sm mb-3">Insights</div>
-                <p class="text-neutral-600 text-sm leading-relaxed mb-6 flex-grow">
+                <h3 class="text-xl font-bold text-neutral-100 mb-2">See Your Progress</h3>
+                <div class="text-brand-400 font-bold text-sm mb-3">Insights</div>
+                <p class="text-neutral-300 text-sm leading-relaxed mb-6 flex-grow">
                     Visualize streaks and trends to understand what's working—and what to improve over time.
                 </p>
-                <div class="overflow-hidden rounded-xl shadow-lg border border-neutral-200 reveal delay-200">
+                <div class="overflow-hidden rounded-xl shadow-lg border border-neutral-700 reveal delay-200">
                     <img src="Stats.png"
                          alt="Screenshot of habit statistics"
                          class="w-full h-full object-cover"
@@ -292,16 +293,16 @@
             </div>
 
             <!-- Feature 3: Reminders / Widgets / Privacy -->
-            <div class="group relative bg-white border border-neutral-200 hover:border-brand-500/30 rounded-3xl p-6 transition-all hover:shadow-xl hover:shadow-brand-500/5 reveal delay-300 flex flex-col">
-                <div class="w-12 h-12 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6">
+            <div class="group relative bg-neutral-800 border border-neutral-700 hover:border-brand-500/30 rounded-3xl p-6 transition-all hover:shadow-xl hover:shadow-brand-500/5 reveal delay-300 flex flex-col">
+                <div class="w-12 h-12 bg-brand-900/40 rounded-2xl flex items-center justify-center text-brand-400 text-2xl mb-6">
                     <i class="ph ph-bell-simple"></i>
                 </div>
-                <h3 class="text-xl font-bold text-neutral-900 mb-2">Stay On Track</h3>
-                <div class="text-brand-600 font-bold text-sm mb-3">Reminders & widgets</div>
-                <p class="text-neutral-600 text-sm leading-relaxed mb-6 flex-grow">
+                <h3 class="text-xl font-bold text-neutral-100 mb-2">Stay On Track</h3>
+                <div class="text-brand-400 font-bold text-sm mb-3">Reminders & widgets</div>
+                <p class="text-neutral-300 text-sm leading-relaxed mb-6 flex-grow">
                     Get reminders and keep habits visible on your Home Screen—so you don't lose momentum.
                 </p>
-                <div class="overflow-hidden rounded-xl shadow-lg border border-neutral-200 reveal delay-200">
+                <div class="overflow-hidden rounded-xl shadow-lg border border-neutral-700 reveal delay-200">
                     <img src="Widgets.png"
                          alt="Screenshot of reminders or widgets"
                          class="w-full h-full object-cover"
@@ -336,39 +337,39 @@
 
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-neutral-100 pt-16 pb-8">
+    <footer class="bg-neutral-900 border-t border-neutral-800 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 md:col-span-2">
-                    <a href="#" class="text-2xl font-display font-bold text-neutral-900 flex items-center gap-2 mb-4">
+                    <a href="#" class="text-2xl font-display font-bold text-neutral-100 flex items-center gap-2 mb-4">
                         <img src="AppIcon.png" 
                      alt="HabitBe App Icon" 
                      class="w-8 h-8 rounded-lg shadow-lg shadow-brand-500/20 object-cover"
                      onerror="this.onerror=null;this.src='https://placehold.co/32x32/cccccc/333333?text=Logo'">
                         HabitBe
                     </a>
-                    <p class="text-neutral-500 max-w-sm text-sm leading-relaxed">
+                    <p class="text-neutral-400 max-w-sm text-sm leading-relaxed">
                         Habit Tracker with no frills.
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-neutral-900 font-bold mb-4 text-sm uppercase tracking-wider">App</h4>
-                    <ul class="space-y-3 text-neutral-500 text-sm">
-                        <li><a href="#features" class="hover:text-brand-500 transition-colors">Features</a></li>
+                    <h4 class="text-neutral-100 font-bold mb-4 text-sm uppercase tracking-wider">App</h4>
+                    <ul class="space-y-3 text-neutral-400 text-sm">
+                        <li><a href="#features" class="hover:text-brand-400 transition-colors">Features</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-neutral-900 font-bold mb-4 text-sm uppercase tracking-wider">Legal</h4>
-                    <ul class="space-y-3 text-neutral-500 text-sm">
-                        <li><a href="terms.html" class="hover:text-brand-500 transition-colors">Imprint</a></li>
-                        <li><a href="terms.html" class="hover:text-brand-500 transition-colors">Terms</a></li>
+                    <h4 class="text-neutral-100 font-bold mb-4 text-sm uppercase tracking-wider">Legal</h4>
+                    <ul class="space-y-3 text-neutral-400 text-sm">
+                        <li><a href="terms.html" class="hover:text-brand-400 transition-colors">Imprint</a></li>
+                        <li><a href="terms.html" class="hover:text-brand-400 transition-colors">Terms</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-neutral-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-neutral-500 text-xs">© 2025 HabitBe. All rights reserved.</p>
-                <div class="flex gap-6 text-neutral-400">
-                    <a href="https://www.instagram.com/habitbe.app" class="hover:text-brand-500 transition-colors"><i class="ph ph-instagram-logo text-xl"></i></a>
+            <div class="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-neutral-400 text-xs">© 2025 HabitBe. All rights reserved.</p>
+                <div class="flex gap-6 text-neutral-500">
+                    <a href="https://www.instagram.com/habitbe.app" class="hover:text-brand-400 transition-colors"><i class="ph ph-instagram-logo text-xl"></i></a>
                 </div>
             </div>
         </div>

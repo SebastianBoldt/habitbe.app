@@ -107,6 +107,21 @@
             font-weight: 500;
             border-radius: 1rem;
         }
+
+        /* Review Marquee */
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .scroll-track {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 60s linear infinite;
+        }
+        .scroll-track:hover {
+            animation-play-state: paused;
+        }
+
     </style>
 </head>
 <body class="bg-neutral-900 text-neutral-100 font-sans selection:bg-brand-500 selection:text-white overflow-x-hidden">
@@ -308,6 +323,176 @@
                          class="w-full h-full object-cover"
                          onerror="this.onerror=null;this.src='https://placehold.co/400x300/f3f4f6/9ca3af?text=Widget+Screenshot+missing'">
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Ratings & Reviews Section -->
+<section class="py-24 relative bg-neutral-800/50 border-y border-neutral-800 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-5xl font-display font-bold text-neutral-100 mb-6">What Our Users Say.</h2>
+        <div class="flex items-center justify-center gap-3 mb-3">
+            <span class="text-5xl font-display font-bold text-neutral-100">4.7</span>
+            <div class="flex items-center text-2xl gap-0.5">
+                <i class="ph-fill ph-star text-yellow-400"></i>
+                <i class="ph-fill ph-star text-yellow-400"></i>
+                <i class="ph-fill ph-star text-yellow-400"></i>
+                <i class="ph-fill ph-star text-yellow-400"></i>
+                <i class="ph-fill ph-star-half text-yellow-400"></i>
+            </div>
+        </div>
+        <p class="text-neutral-400 text-sm">351 Ratings on the App Store</p>
+    </div>
+
+    <div class="relative reveal delay-200">
+        <div class="scroll-track gap-6 px-3">
+            <!-- First set -->
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I looked for a while for a habit tracker that allows me the freedom to track based on a weekly basis without having to specify days per habit. Finally found the perfect one! No account needed, so data stays local and private. I honestly don't know why this is not already App of the Year! It is for me.</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">Besides the many already described positive qualities, the outstanding widget stands out above all. Without having to open the app, you can directly check off activities and see your progress immediately, even for multi-step activities. This makes usage simple and hassle-free — for me, an unbeatable argument! Additionally, it's one of the few apps without developer-side data hunger, which is a definitive privacy advantage! Quick support for inquiries. Thank you!</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I love this app. It works well, has a nice UI, and has all the functionality I've been looking for in a habit tracker. In addition, it seems like it doesn't collect user data. Not only that but you can buy it with a one-time fee instead of a subscription! Overall, this feels like an app with integrity and I'm happy to support it.</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">Super customizable. Great design. Diverse range of data viewing options. Hands down the best habit tracker I've used.</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">This app finally meets my standards. I searched the App Store for a long time for exactly this kind of app. Thank you very much for the broad free package. The premium version with its one-time payment has also completely convinced me. 🤙</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">Super beautiful, sleek app. After a long search for the perfect habit tracker, I finally found it. Fair price for the Pro version! Many thanks to the developer. ❤️</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I tried so many habit tracker apps but this one is my favorite. I really like the interface and the widgets. Also I had some issues but the developer contacted me and solved everything so what can I ask more? Thank you so much! I obviously recommend this app! 🦊</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I downloaded a whole bunch of habit trackers to find the best one. This one is exactly what I was looking for. Perfectly customizable for weekly goals, great visualization, attention to detail but without too much clutter. I'm an iOS app developer myself and I know how much work goes into an app like this. I bought the full version and would have happily paid three times as much :)</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">There's a lot of habit trackers in the app store. Many are either badly designed or have an expensive subscription model. Well, after doing some digging I can say that this app here is the one you need. It's super well designed, feature packed and has a friendly one time payment. I can't understand why people aren't talking about it! It truly gives the big names in the category a run for their money. Try it!</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">This is the best designed habit app I have seen. It is very intuitive and functionality rich. The best thing is the price for the Pro version and no subscription 😀. There are so many subscription options out there that cost as much per month as this Pro version is to buy and are nowhere near as good. Keep it up!</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">The product does everything I need, at a fair one-time price, with a beautiful design and very fast support. Excited to see what's coming next. :)</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">This is a great and very easy-to-understand app that delivers on everything it promises! I especially like the one-time price for the PRO version, which is very fair. A clear recommendation for anyone who wants to manage their daily to-dos or build new habits!</p>
+            </div>
+
+            <!-- Duplicate set for seamless loop -->
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I looked for a while for a habit tracker that allows me the freedom to track based on a weekly basis without having to specify days per habit. Finally found the perfect one! No account needed, so data stays local and private. I honestly don't know why this is not already App of the Year! It is for me.</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">Besides the many already described positive qualities, the outstanding widget stands out above all. Without having to open the app, you can directly check off activities and see your progress immediately, even for multi-step activities. This makes usage simple and hassle-free — for me, an unbeatable argument! Additionally, it's one of the few apps without developer-side data hunger, which is a definitive privacy advantage! Quick support for inquiries. Thank you!</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I love this app. It works well, has a nice UI, and has all the functionality I've been looking for in a habit tracker. In addition, it seems like it doesn't collect user data. Not only that but you can buy it with a one-time fee instead of a subscription! Overall, this feels like an app with integrity and I'm happy to support it.</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">Super customizable. Great design. Diverse range of data viewing options. Hands down the best habit tracker I've used.</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">This app finally meets my standards. I searched the App Store for a long time for exactly this kind of app. Thank you very much for the broad free package. The premium version with its one-time payment has also completely convinced me. 🤙</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">Super beautiful, sleek app. After a long search for the perfect habit tracker, I finally found it. Fair price for the Pro version! Many thanks to the developer. ❤️</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I tried so many habit tracker apps but this one is my favorite. I really like the interface and the widgets. Also I had some issues but the developer contacted me and solved everything so what can I ask more? Thank you so much! I obviously recommend this app! 🦊</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">I downloaded a whole bunch of habit trackers to find the best one. This one is exactly what I was looking for. Perfectly customizable for weekly goals, great visualization, attention to detail but without too much clutter. I'm an iOS app developer myself and I know how much work goes into an app like this. I bought the full version and would have happily paid three times as much :)</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">There's a lot of habit trackers in the app store. Many are either badly designed or have an expensive subscription model. Well, after doing some digging I can say that this app here is the one you need. It's super well designed, feature packed and has a friendly one time payment. I can't understand why people aren't talking about it! It truly gives the big names in the category a run for their money. Try it!</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">This is the best designed habit app I have seen. It is very intuitive and functionality rich. The best thing is the price for the Pro version and no subscription 😀. There are so many subscription options out there that cost as much per month as this Pro version is to buy and are nowhere near as good. Keep it up!</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">The product does everything I need, at a fair one-time price, with a beautiful design and very fast support. Excited to see what's coming next. :)</p>
+            </div>
+            <div class="min-w-[350px] max-w-[350px] bg-neutral-800 border border-neutral-700 rounded-2xl p-6 flex flex-col gap-4">
+                <div class="flex text-yellow-400 text-sm gap-0.5">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-300 text-sm leading-relaxed">This is a great and very easy-to-understand app that delivers on everything it promises! I especially like the one-time price for the PRO version, which is very fair. A clear recommendation for anyone who wants to manage their daily to-dos or build new habits!</p>
             </div>
         </div>
     </div>
